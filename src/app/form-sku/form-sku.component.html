@@ -1,0 +1,10 @@
+<div class="ui raised segment">
+  <h2 class="ui header">Demo Form: Sku</h2>
+  <form [formGroup]="formProduct" (ngSubmit)="onSubmit(formProduct.value)" class="ui form">
+    <div class="field">
+      <label for="sku">SKU</label>
+      <input type="text" name="sku" id="sku" placeholder="SKU" [formControl]="formProduct.controls['sku']">
+    </div>
+    <button type="submit" class="ui button">Submit</button>
+  </form>
+</div>
